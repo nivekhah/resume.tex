@@ -1,0 +1,254 @@
+% ==========================================================================
+% My (LaTeX) resume
+% ==========================================================================
+%
+% Original author: Sourabh Bajaj
+% License: MIT
+%
+% ==========================================================================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ==========================================================================
+% Custom commands
+% ==========================================================================
+
+% \newcommand{\resumeItem}[2]{
+%   \item\small{
+%     \textbf{#1}{: #2 \vspace{-2pt}}
+%   }
+% }
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \vspace{5pt} \\
+    \end{tabular*}\vspace{-0pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% ==========================================================================
+
+
+% ==========================================================================
+% Resume starts here
+% ==========================================================================
+
+\begin{document}
+
+% ==========================================================================
+% Heading
+% ==========================================================================
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Alejandro Beltrán Coronado} & Email: \href{mailto:alebelcor@gmail.com}{\underline{alebelcor@gmail.com}}\\
+  & GitHub: \href{https://github.com/alebelcor}{\underline{github.com/alebelcor}} \\
+  & LinkedIn: \href{https://linkedin.com/in/alebelcor}{\underline{linkedin.com/in/alebelcor}} \\ \\
+\end{tabular*}
+
+10+ years of experience in Web Development with a specialty and passion for Front End, performance, and accessibility.
+
+% ==========================================================================
+
+
+% ==========================================================================
+% Experience
+% ==========================================================================
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://americantours.com/}{AmericanTours International, LLC}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {Software Engineer}{Nov 2019 – Present}
+
+      {\small\textbf{Technologies}: JavaScript, HTML, CSS, Sass (SCSS), React, React Bootstrap, React Router, Reselect, Jest, React Testing Library, Create React App, PropTypes, Node.js, Express, ESLint, Prettier, Husky, Yarn, date-fns, Visual Studio Code, SVN with git-svn}
+
+      \resumeItemListStart
+        \resumeItem
+          {Led an engineering team of two in charge of implementing a modern, fast, and aesthetic re-imagining of ATI's internal administration tool used by travel agents for payment and transaction review, and processing.}
+        \resumeItem
+          {Designed the shapes, payload/content, and headers of the HTTP API requests and responses.}
+        \resumeItem
+          {Implemented pure client-side user session management.}
+        \resumeItem
+          {Implemented auto-refresh mechanism of JWT token.}
+        \resumeItem
+          {Implemented data tables with pagination, sorting, expandable rows with sub-component rendering and sub-tables.}
+        \resumeItem
+          {Implemented custom column filters for tables, e.g. text, date (with date picker widget), number range, and select.}
+        \resumeItem
+          {Implemented test suite with 90\% code coverage for actions/components/hooks/reducers/selectors/services/utils.}
+        \resumeItem
+          {Implemented maintainable and customizable CSS architecture using Sass, Bootstrap (with overrides), and BEM.}
+        \resumeItem
+          {Implemented mock back end API server using Express for faster and better DX.}
+        \resumeItem
+          {Integrated code linting and auto-formatting for JS/JSX files as part of test suite, and VS Code.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.switchfly.com/}{Switchfly, LLC}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {Software Engineer}{Feb 2014 – Aug 2019}
+
+      {\small\textbf{Technologies}: JavaScript, Java, HTML, CSS, Sass (SCSS), Ember.js, Handlebars.js, Git, Gulp, JSHint, Karma, Mocha, Chai, npm, jQuery, Selenium, Jenkins, Ant, Maven, FreeMarker, ColdFusion, PostgreSQL, IntelliJ IDEA}
+
+      \resumeItemListStart
+        \resumeItem
+          {Implemented interstitial/loading page for better SEO and accessibility.}
+        \resumeItem
+          {Implemented skeleton/wireframe loading screens for better perceived performance.}
+        \resumeItem
+          {Implemented custom responsive navigation with auto-collapsing items based on viewport.}
+        \resumeItem
+          {Increased performance by implementing preloading of the next page assets.}
+        \resumeItem
+          {Increased performance by reducing/consolidating – and compression – of Ajax HTTP requests/responses.}
+        \resumeItem
+          {Integrated PAYBACK® and Masterpass™ payments into checkout process.}
+        \resumeItem
+          {Added automated end-to-end test cases for all new features in Selenium Java.}
+        \resumeItem
+          {Added base, and custom analytics for clients, for data-based product and UI/UX decision making.}
+        \resumeItem
+          {Refactored codebase to meet AA level of the WCAG 2.0 accessibility standard.}
+        \resumeItem
+          {Peer-reviewed other people's code as "Subject Matter Expect" of the shopping process.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://evolvemediallc.com/}{Evolve Media, LLC}}{via \href{https://intugo.co/}{Intugo}}
+      {Senior Software Engineer}{Jul 2013 – Feb 2014\vspace{-5pt}}
+
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textit{\small{Software Engineer}} & \textit{\small{Jul 2012 – Jul 2013}}\vspace{5pt} \\
+      \end{tabular*}\vspace{-0pt}
+
+      {\small\textbf{Technologies}: JavaScript, PHP, WordPress, HTML, CSS with Sass (SCSS), Compass, and Susy, jQuery, SVN with git-svn, Jenkins, Ant, npm, Grunt, JSHint, Capistrano}
+
+      \resumeItemListStart
+        \resumeItem
+          {Worked as Software Engineer focused on Front End Engineering for multiple heavily trafficked and highly ranked websites targeting, among other things: women, fashion, sports, gaming and entertainment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.optum.com/}{OptumInsight}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {Application Development Engineer}{Jan 2009 – Jun 2012}
+      {\small\textbf{Technologies}: Java, Java EE, Servlets, JavaScript, LotusScript, Formula Language, Lotus Notes, Lotus Domino, Tomcat, HTML, CSS, XML, XPath, XSLT, SVN, CVS, RCS, Maven, Ant, Make, Jenkins}
+
+      \resumeItemListStart
+        \resumeItem
+          {Worked as Application Development Engineer extending and maintaining their EMR Lite system, related services and applications.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% ==========================================================================
+
+
+% ==========================================================================
+% Education
+% ==========================================================================
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Instituto Tecnológico de Hermosillo}{Hermosillo, MX}
+      {Bachelor of Computer Systems Engineering}{Dec 2008}
+  \resumeSubHeadingListEnd
+
+% ==========================================================================
+
+
+% ==========================================================================
+% Skills
+% ==========================================================================
+
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Software Engineering}{: Agile Software Development, Software Release Cycle, Unit Testing, Integration Testing, End-to-end Testing, Continuous Integration, Software Security, Static Code Analysis}
+   }
+   \item{
+    \textbf{Front End (Web)}{: HTML, CSS, JavaScript, Web Performance, Web Accessibility, React, React Hooks, Redux, CSS-in-JS, Ember.js, Handlebars.js, jQuery, Sass}
+   }
+   \item{
+    \textbf{Tools}{: Node.js, npm, Yarn, ESLint, Prettier, XO, AVA, Chai, Jasmine, Mocha, Jest, Karma, Grunt, Gulp, PostCSS, Git, Bash, Zsh, Homebrew, Homebrew Cask, Markdown, VS Code, IntelliJ IDEA}
+   }
+ \resumeSubHeadingListEnd
+
+% ==========================================================================
+
+
+% ==========================================================================
+% Projects
+% ==========================================================================
+
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \item\small{
+%       \textbf{Project name}{: Project description. \vspace{-2pt}}
+%     }
+%   \resumeSubHeadingListEnd
+
+% ==========================================================================
+
+
+\end{document}
