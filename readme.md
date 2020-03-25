@@ -2,7 +2,7 @@
 
 >My ([LaTeX](https://www.latex-project.org/)) resume
 
-[Link](https://alebelcor.github.io/resume.tex/)
+[Link here](https://alebelcor.github.io/resume.tex/)
 
 ## Build
 
