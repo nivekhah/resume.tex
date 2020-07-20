@@ -6,7 +6,7 @@
 
 ## Build
 
-### Locally
+### How to build locally
 
 ```bash
 make
@@ -14,7 +14,7 @@ make
 
 Note: For this you will need [GNU Make](https://www.gnu.org/software/make/) and `xelatex`. The latter comes bundled with any LaTeX distribution (e.g. [MacTeX](https://www.tug.org/mactex/) for macOS, around 4 GB).
 
-### Online
+### How to build online
 
 1. Go to an online LaTeX editor, e.g. [Overleaf](https://www.overleaf.com)
 1. Paste the contents of `resume.tex`
