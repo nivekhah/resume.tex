@@ -2,7 +2,7 @@
 
 CC=xelatex
 DESTINATION=docs
-OUTPUT_FILE=alejandro_beltran_coronado_resume.pdf
+OUTPUT_FILE=alejandro_beltran_resume.pdf
 
 build:
 	@echo "Building…"
