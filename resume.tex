@@ -71,9 +71,9 @@
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -86,25 +86,25 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \newcommand{\ExternalLink}{%
-    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
-        \begin{scope}[x=1ex, y=1ex]
-            \clip (-0.1,-0.1)
-                --++ (-0, 1.2)
-                --++ (0.6, 0)
-                --++ (0, -0.6)
-                --++ (0.6, 0)
-                --++ (0, -1);
-            \path[draw,
-                line width = 0.5,
-                rounded corners=0.5]
-                (0,0) rectangle (1,1);
-        \end{scope}
-        \path[draw, line width = 0.5] (0.5, 0.5)
-            -- (1, 1);
-        \path[draw, line width = 0.5] (0.6, 1)
-            -- (1, 1) -- (1, 0.6);
-        }
+  \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+    \begin{scope}[x=1ex, y=1ex]
+      \clip (-0.1,-0.1)
+        --++ (-0, 1.2)
+        --++ (0.6, 0)
+        --++ (0, -0.6)
+        --++ (0.6, 0)
+        --++ (0, -1);
+      \path[draw,
+        line width = 0.5,
+        rounded corners=0.5]
+        (0,0) rectangle (1,1);
+    \end{scope}
+    \path[draw, line width = 0.5] (0.5, 0.5)
+      -- (1, 1);
+    \path[draw, line width = 0.5] (0.6, 1)
+      -- (1, 1) -- (1, 0.6);
     }
+  }
 
 % ==========================================================================
 
@@ -145,15 +145,9 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
         \resumeItem
           {Focused on Front End Engineering for \href{https://www.importantscore.com}{ImportantScore.com \ExternalLink} and \href{https://www.goofreecredit.com}{GOFreeCredit.com \ExternalLink} that offer consumers fast and easy online access to their credit score and credit monitoring services via the three national credit bureaus: Experian, Equifax, and TransUnion}
         \resumeItem
-          {Lead Web performance efforts to improve our PageSpeed score and Web Vitals as part of our team mission.}
+          {Led Web performance efforts to improve our performance score and Web Vitals, as part of our team mission, which has resulted in a 68\% (mobile) and 17\% (desktop) increase in performance score points for GOFreeCredit.com. And a 43\% (mobile) and 17\% (desktop) increase for ImportantScore.com.}
         \resumeItem
-          {Increased PageSpeed score by +2 points (mobile) and +5 points (desktop) as a result of 37\% reduction in file size for (uncompressed) CSS.}
-        \resumeItem
-          {Increased PageSpeed score by +3 points (mobile) and +2 points (desktop) as a result of 33\% improvement in file size with image optimization.}
-        \resumeItem
-          {Increased PageSpeed score by +11 points (mobile) and +8 points (desktop) in PageSpeed score as a result of 43\% improvement in file size for using next-gen image formats (e.g. \texttt{.jp2}, \texttt{.webp}).}
-        \resumeItem
-          {Implemented several other performances optimizations: visible text during webfont load, reduced requests size, eliminated dead dependencies, added resource hints, asynchronous/lazy loading of render-blocking resources.}
+          {Implemented several other performances optimizations: next-gen image formats, image optimizations, visible text during webfont load, reduced requests size, eliminated dead dependencies, added resource hints, asynchronous/lazy loading of render-blocking resources.}
         \resumeItem
           {Implemented A/B tests and experiments to determine the most successful variation to integrate and help increase revenue, gross profit, GPM, and various other C2C rates.}
         \resumeItem
