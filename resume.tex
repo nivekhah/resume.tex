@@ -7,19 +7,20 @@
 %
 % ==========================================================================
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[11pt, a4paper]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{palatino}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{latexsym}
+\usepackage{marvosym}
 \usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
 \usepackage{tikz}
 
 \pagestyle{fancy}
@@ -43,36 +44,30 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
 % ==========================================================================
 % Custom commands
 % ==========================================================================
 
-% \newcommand{\resumeItem}[2]{
-%   \item\small{
-%     \textbf{#1}{: #2 \vspace{-2pt}}
-%   }
-% }
-
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    #1
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4}\\
-    \end{tabular*}
+      \textbf{#1} & \textit{\small{#2}}\\
+      \textit{\small{#3}} & \textit{\small{#4}}\\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small#1} & \textit{\small #2}\\
+    \textit{\small{#1}} & \textit{\small{#2}}
   \end{tabular*}
 }
 
@@ -82,10 +77,10 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
-\newcommand{\ExternalLink}{%
+\newcommand{\externalLink}{%
   \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
     \begin{scope}[x=1ex, y=1ex]
       \clip (-0.1,-0.1)
@@ -120,12 +115,12 @@
 % ==========================================================================
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Alejandro Beltran} & Email: alebelcor@gmail.com\\
-  & GitHub: \href{https://github.com/alebelcor}{github.com/alebelcor \ExternalLink} \\
-  & LinkedIn: \href{https://linkedin.com/in/alebelcor}{linkedin.com/in/alebelcor \ExternalLink} \\ \\
+  \scshape{\textbf{\LARGE Alejandro Beltran}} & \small{Email: alebelcor@gmail.com}\\
+    & \small{GitHub: \href{https://github.com/alebelcor}{github.com/alebelcor \externalLink}}\\
+    & \small{LinkedIn: \href{https://linkedin.com/in/alebelcor}{linkedin.com/in/alebelcor \externalLink}}\\\\
 \end{tabular*}
 
-I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of experience with a specialty and passion for UI, Web performance, and Web accessibility.
+\small I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of experience with a specialty and passion for UI, Web performance, and Web accessibility.
 
 % ==========================================================================
 
@@ -136,13 +131,12 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
 
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {\href{https://www.consumertrack.com/}{ConsumerTrack, Inc. \ExternalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {\href{https://www.consumertrack.com/}{ConsumerTrack, Inc. \externalLink}}{via \href{https://www.encora.com/}{Encora}}
       {Front End Engineer (Remote)}{Apr 2020 – Present}
       \resumeItemListStart
         \resumeItem
-          {Focused on Front End Engineering for \href{https://www.importantscore.com}{ImportantScore.com \ExternalLink} and \href{https://www.goofreecredit.com}{GOFreeCredit.com \ExternalLink} that offer consumers fast and easy online access to their credit score and credit monitoring services via the three national credit bureaus: Experian, Equifax, and TransUnion}
+          {Focused on Front End Engineering for \href{https://www.importantscore.com}{ImportantScore.com \externalLink} and \href{https://www.gofreecredit.com}{GOFreeCredit.com \externalLink} that offer consumers fast and easy online access to their credit score and credit monitoring services via the three national credit bureaus: Experian, Equifax, and TransUnion}
         \resumeItem
           {Led Web performance efforts to improve our performance score and Web Vitals, as part of our team mission, which has resulted in a 68\% (mobile) and 17\% (desktop) increase in performance score points for GOFreeCredit.com. And a 43\% (mobile) and 17\% (desktop) increase for ImportantScore.com.}
         \resumeItem
@@ -152,10 +146,10 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
         \resumeItem
           {Implemented automation of data management for CCPA compliance and to reduce the manual work of over 600 inquiries per month for "Delete My Data", "See My Data" and "Do Not Sell My Data" requests.}
       \resumeItemListEnd
-      {\footnotesize Tech: JavaScript, React, Redux, Next.js, HTML, CSS, Sass (SCSS), Twig, Bootstrap, Node.js, npm, Jest, React Testing Library, Babel, ESLint, Husky, Webpack, CircleCI, jQuery, PostCSS, Visual Studio Code, Git}
+      {\small Tech: JavaScript, React, Redux, Next.js, HTML, CSS, Sass (SCSS), Twig, Bootstrap, Node.js, npm, Jest, React Testing Library, Babel, ESLint, Husky, Webpack, CircleCI, jQuery, PostCSS, Visual Studio Code, Git}
 
     \resumeSubheading
-      {\href{https://americantours.com/}{AmericanTours International, LLC \ExternalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {\href{https://americantours.com/}{AmericanTours International, LLC \externalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
       {Front End Engineer (Remote)}{Nov 2019 – Mar 2020*}
       \resumeItemListStart
         \resumeItem
@@ -179,12 +173,12 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
         \resumeItem
           {Integrated code linting and auto-formatting for JS/JSX files as part of test suite, and VS Code.}
       \resumeItemListEnd
-      {\footnotesize Tech: JavaScript, HTML, CSS, Sass (SCSS), React, React Bootstrap, React Router, Reselect, Jest, React Testing Library, Create React App, PropTypes, Node.js, Express, ESLint, Prettier, Husky, Yarn, date-fns, Visual Studio Code, SVN with git-svn}
+      {\small Tech: JavaScript, HTML, CSS, Sass (SCSS), React, React Bootstrap, React Router, Reselect, Jest, React Testing Library, Create React App, PropTypes, Node.js, Express, ESLint, Prettier, Husky, Yarn, date-fns, Visual Studio Code, SVN with git-svn}
 
       {\footnotesize * – Project ended due to COVID-19.}
 
     \resumeSubheading
-      {\href{https://www.switchfly.com/}{Switchfly, LLC \ExternalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {\href{https://www.switchfly.com/}{Switchfly, LLC \externalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
       {Software Engineer (Remote)}{Feb 2014 – Aug 2019}
       \resumeItemListStart
         \resumeItem
@@ -196,7 +190,7 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
         \resumeItem
           {Increased performance by reducing/consolidating–and compression–of Ajax HTTP requests/responses.}
         \resumeItem
-          {Integrated \href{https://www.payback.net/de/en/home/}{PAYBACK® \ExternalLink} and \href{https://www.mastercard.us/}{Masterpass™ \ExternalLink} payments into checkout process.}
+          {Integrated \href{https://www.payback.net/de/en/home/}{PAYBACK® \externalLink} and \href{https://www.mastercard.us/}{Masterpass™ \externalLink} payments into checkout process.}
         \resumeItem
           {Added automated end-to-end test cases for all new features in Selenium Java.}
         \resumeItem
@@ -206,29 +200,30 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
         \resumeItem
           {Peer-reviewed other people's code as "Subject Matter Expect" of the shopping experience.}
       \resumeItemListEnd
-      {\footnotesize Tech: JavaScript, Java, HTML, CSS, Sass (SCSS), Ember.js, Handlebars.js, Git, Gulp, JSHint, Karma, Mocha, Chai, npm, jQuery, Selenium, Jenkins, Ant, Maven, FreeMarker, ColdFusion, PostgreSQL, IntelliJ IDEA}
+      {\small Tech: JavaScript, Java, HTML, CSS, Sass (SCSS), Ember.js, Handlebars.js, Git, Gulp, JSHint, Karma, Mocha, Chai, npm, jQuery, Selenium, Jenkins, Ant, Maven, FreeMarker, ColdFusion, PostgreSQL, IntelliJ IDEA}
 
     \resumeSubheading
-      {\href{https://evolvemediallc.com/}{Evolve Media, LLC \ExternalLink}}{via \href{https://intugo.co/}{Intugo}}
+      {\href{https://evolvemediallc.com/}{Evolve Media, LLC \externalLink}}{via \href{https://intugo.co/}{Intugo}}
       {Senior Software Engineer (Remote)}{Jul 2013 – Feb 2014}
+
       \resumeSubSubheading
         {Software Engineer (Remote)}{Jul 2012 – Jul 2013}
         \resumeItemListStart
-        \resumeItem
-          {Worked as Software Engineer focused on Front End Engineering for multiple heavily trafficked and highly ranked websites targeting, among other things: women, fashion, sports, gaming and entertainment.}
-        \resumeItem
-          {Examples: \href{https://www.thefashionspot.com/}{theFashionSpot \ExternalLink}, \href{https://www.momtastic.com/}{Momtastic \ExternalLink}, \href{https://www.superherohype.com/}{SuperHeroHype \ExternalLink}}
-          \resumeItemListEnd
-      {\footnotesize Tech: JavaScript, PHP, WordPress, HTML, CSS with Sass (SCSS), Compass, and Susy, jQuery, SVN with git-svn, Jenkins, Ant, npm, Grunt, JSHint, Capistrano}
+          \resumeItem
+            {Worked as Software Engineer focused on Front End Engineering for multiple heavily trafficked and highly ranked websites targeting, among other things: women, fashion, sports, gaming and entertainment.}
+          \resumeItem
+            {Examples: \href{https://www.thefashionspot.com/}{theFashionSpot \externalLink}, \href{https://www.momtastic.com/}{Momtastic \externalLink}, \href{https://www.superherohype.com/}{SuperHeroHype \externalLink}}
+        \resumeItemListEnd
+        {\small Tech: JavaScript, PHP, WordPress, HTML, CSS with Sass (SCSS), Compass, and Susy, jQuery, SVN with git-svn, Jenkins, Ant, npm, Grunt, JSHint, Capistrano}
 
     \resumeSubheading
-      {\href{https://www.optum.com/}{OptumInsight \ExternalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
+      {\href{https://www.optum.com/}{OptumInsight \externalLink}}{via \href{https://nearsoft.com}{Nearsoft}}
       {Application Development Engineer (Remote)}{Jan 2009 – Jun 2012}
       \resumeItemListStart
         \resumeItem
           {Worked as Application Development Engineer extending and maintaining their EMR Lite system, related services and applications.}
       \resumeItemListEnd
-      {\footnotesize Tech: Java, Java EE, Servlets, JavaScript, LotusScript, Formula Language, Lotus Notes, Lotus Domino, Tomcat, HTML, CSS, XML, XPath, XSLT, SVN, CVS, RCS, Maven, Ant, Make, Jenkins}
+      {\small Tech: Java, Java EE, Servlets, JavaScript, LotusScript, Formula Language, Lotus Notes, Lotus Domino, Tomcat, HTML, CSS, XML, XPath, XSLT, SVN, CVS, RCS, Maven, Ant, Make, Jenkins}
 
   \resumeSubHeadingListEnd
 
@@ -256,14 +251,14 @@ I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of e
 \section{Certifications}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\href{https://www.freecodecamp.org/certification/alebelcor/responsive-web-design}{Responsive Web Design \ExternalLink}}{freeCodeCamp}
-      {}{}\vspace{-20pt}
+      {\href{https://www.freecodecamp.org/certification/alebelcor/responsive-web-design}{Responsive Web Design \externalLink}}{freeCodeCamp}
+      {}{}\vspace{-10pt}
     \resumeSubheading
-      {\href{https://www.freecodecamp.org/certification/alebelcor/javascript-algorithms-and-data-structures}{JavaScript Algorithms and Data Structures \ExternalLink}}{freeCodeCamp}
-      {}{}\vspace{-20pt}
+      {\href{https://www.freecodecamp.org/certification/alebelcor/javascript-algorithms-and-data-structures}{JavaScript Algorithms and Data Structures \externalLink}}{freeCodeCamp}
+      {}{}\vspace{-10pt}
     \resumeSubheading
-      {Scrum Foundation Professional Certificate}{Scrum Foundation}
-      {ID: TLSZSQSVHG-MMSTYQSQ-RPFDLKRHJT}{}
+      {Scrum Foundation Professional Certificate \scriptsize{(TLSZSQSVHG-MMSTYQSQ-RPFDLKRHJT)}}{Scrum Foundation}
+      {}{\vspace{-10pt}}
   \resumeSubHeadingListEnd
 
 % ==========================================================================
