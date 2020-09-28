@@ -44,7 +44,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule]
 
 % ==========================================================================
 % Custom commands
@@ -59,18 +59,18 @@
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small{#2}}\\
-      \textit{\small{#3}} & \textit{\small{#4}}\\
-    \end{tabular*}\vspace{-5pt}
+      \textbf{#1} & \small{#2}\vspace{2pt}\\
+      \small{#3} & \small{#4}\\
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small{#1}} & \textit{\small{#2}}
+    \small{#1} & \small{#2}
   \end{tabular*}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -204,7 +204,6 @@
     \resumeSubheading
       {\href{https://evolvemediallc.com/}{Evolve Media, LLC \externalLink}}{via \href{https://intugo.co/}{Intugo}}
       {Senior Software Engineer (Remote)}{Jul 2013 – Feb 2014}
-
       \resumeSubSubheading
         {Software Engineer (Remote)}{Jul 2012 – Jul 2013}
         \resumeItemListStart
@@ -256,8 +255,8 @@
       {\href{https://www.freecodecamp.org/certification/alebelcor/javascript-algorithms-and-data-structures}{JavaScript Algorithms and Data Structures \externalLink}}{freeCodeCamp}
       {}{}\vspace{-10pt}
     \resumeSubheading
-      {Scrum Foundation Professional Certificate \tiny{(TLSZSQSVHG-MMSTYQSQ-RPFDLKRHJT)}}{Scrum Foundation}
-      {}{\vspace{-10pt}}
+      {Scrum Foundation Professional Certificate}{Scrum Foundation}
+      {\footnotesize{\upshape{TLSZSQSVHG-MMSTYQSQ-RPFDLKRHJT}}}{\vspace{-5pt}}
   \resumeSubHeadingListEnd
 
 % ==========================================================================
