@@ -9,22 +9,27 @@
 
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[english]{babel}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage[empty]{fullpage}
-\usepackage[hidelinks]{hyperref}
 \usepackage{latexsym}
-\usepackage{marvosym}
-\usepackage{tabularx}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
 \usepackage{tikz}
+\usepackage[sfdefault,light]{FiraSans} % https://tug.org/FontCatalogue/ %
+\usepackage[T1]{fontenc}
+
+\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -45,6 +50,9 @@
 \titleformat{\section}{
   \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
 % ==========================================================================
 % Custom commands
@@ -126,7 +134,7 @@
     & \small{LinkedIn: \href{https://linkedin.com/in/alebelcor}{linkedin.com/in/alebelcor}}\\\\
 \end{tabularx}
 
-\small I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of experience with a specialty and passion for UI, Web performance, and Web accessibility.
+\small I'm a Software Engineer from Mexico focused on Web Front End with 10+ years of experience with a specialty and passion for UI/UX, Web performance, and Web accessibility.
 
 % ==========================================================================
 
@@ -147,13 +155,13 @@
         \resumeItem
           {Led Web performance efforts to improve our performance score and Web Vitals, as part of our team mission, which has resulted in a 68\% (mobile) and 17\% (desktop) increase in performance score points for GOFreeCredit.com. And a 43\% (mobile) and 17\% (desktop) increase for ImportantScore.com.}
         \resumeItem
-          {Implemented several other performances optimizations: next-gen image formats, image optimizations, visible text during webfont load, reduced requests size, eliminated dead dependencies, added resource hints, asynchronous/lazy loading of render-blocking resources.}
+          {Implemented several other performance optimizations: next-gen image formats, image optimizations, visible text during webfont load, reduced requests size, eliminated dead dependencies, added resource hints, asynchronous/lazy loading of images and render-blocking resources.}
         \resumeItem
           {Implemented A/B tests and experiments to determine the most successful variation to integrate and help increase revenue, gross profit, GPM, and various other C2C rates.}
         \resumeItem
           {Implemented automation of data management for CCPA compliance and to reduce the manual work of over 600 inquiries per month for "Delete My Data", "See My Data" and "Do Not Sell My Data" requests.}
       \resumeItemListEnd
-      {\small{Tech: HTML, CSS, Sass, styled-jsx, CSS Modules, Tailwind CSS, Bootstrap, JavaScript, React, Redux, Next.js, Jest, React Testing Library, ESLint, Prettier, Stylelint, Git}\vspace{5pt}}
+      {\small{Tech: HTML, CSS, Sass, styled-jsx, CSS Modules, Tailwind CSS, Bootstrap, JavaScript, React, Redux, Next.js, Jest, React Testing Library, ESLint, Prettier, Stylelint, Amazon S3, AWS Lambda, Git}}
 
     \resumeSubheading
       {Front End Engineer}{\href{https://americantours.com/}{AmericanTours International, LLC \externalLink \footnote{via \href{https://nearsoft.com/}{Nearsoft}}}}{Nov 2019 – Mar 2020 \footnote{Project cut short due to COVID-19}}
@@ -165,13 +173,13 @@
         \resumeItem
           {Implemented pure client-side user session management.}
         \resumeItem
-          {Implemented auto-refresh mechanism of JWT tokens.}
+          {Implemented auto-refresh mechanism of JWT tokens for authentication and authorization requests via renderless component for the duration of the user session.}
         \resumeItem
           {Implemented data tables with pagination, sorting, expandable rows with sub-component rendering.}
         \resumeItem
           {Implemented custom column filters for tables, e.g. text, date (with date picker widget), number range, and select.}
         \resumeItem
-          {Implemented test suite with 90\% code coverage for actions/components/hooks/reducers/selectors/services/utils.}
+          {Implemented test suite or unit and integration tests with 90\% code coverage for actions/components/hooks/reducers/selectors/services/utils.}
         \resumeItem
           {Implemented maintainable and customizable CSS architecture using Sass, Bootstrap (with overrides), and BEM.}
         \resumeItem
@@ -179,10 +187,10 @@
         \resumeItem
           {Integrated code linting and auto-formatting for JS/JSX files as part of test suite, and VS Code.}
       \resumeItemListEnd
-      {\small{Tech: HTML, CSS, Sass, JavaScript, React, React Bootstrap, React Router, Reselect, Jest, React Testing Library, Create React App, ESLint, Prettier, SVN with git-svn}\vspace{5pt}}
+      {\small{Tech: HTML, CSS, Sass, JavaScript, React, React Bootstrap, React Router, Reselect, Jest, React Testing Library, Create React App, ESLint, Prettier, SVN with git-svn}}
 
     \resumeSubheading
-      {Software Engineer}{\href{https://www.switchfly.com/}{Switchfly, LLC \externalLink \footnotemark[2]}}{Feb 2014 – Aug 2019}
+      {Software Engineer (Front End)}{\href{https://www.switchfly.com/}{Switchfly, LLC \externalLink \footnotemark[2]}}{Feb 2014 – Aug 2019}
       \resumeItemListStart
         \resumeItem
           {Worked remotely, focused on Front End Engineering and maintenance of a SaaS platform that powers travel, loyalty, social, payment, and mobile products for multiple clients.}
@@ -195,7 +203,7 @@
         \resumeItem
           {Increased performance by reducing/consolidating–and compression–of Ajax HTTP requests/responses.}
         \resumeItem
-          {Integrated \href{https://www.payback.net/de/en/home/}{PAYBACK® \externalLink} and \href{https://www.mastercard.us/}{Masterpass™ \externalLink} payments into checkout process.}
+          {Integrated \href{https://www.payback.net/de/en/home/}{PAYBACK® \externalLink} and \href{https://www.mastercard.us/}{Masterpass™ \externalLink} payment options into checkout process.}
         \resumeItem
           {Added automated end-to-end test cases for all new features in Selenium Java.}
         \resumeItem
@@ -205,11 +213,10 @@
         \resumeItem
           {Peer-reviewed other people's code as "Subject Matter Expect" of the shopping experience.}
       \resumeItemListEnd
-      {\small{Tech: HTML, CSS, Sass, JavaScript, Ember.js, Java, Spring MVC, Selenium, Git, Mocha, Chai}\vspace{5pt}}
+      {\small{Tech: HTML, CSS, Sass, JavaScript, Ember.js, Java, Spring MVC, Selenium, Git, Mocha, Chai}}
 
     \resumeSubheading
       {Senior Front End Engineer}{\href{https://evolvemediallc.com/}{Evolve Media, LLC \externalLink \footnote{via \href{https://intugo.co/}{Intugo}}}}{Jul 2013 – Feb 2014}
-      {\vspace{-15pt}}
     \resumeSubheading
       {Front End Engineer}{\href{https://evolvemediallc.com/}{Evolve Media, LLC \externalLink \footnotemark[4]}}{Jul 2012 – Jul 2013}
         \resumeItemListStart
@@ -218,7 +225,7 @@
           \resumeItem
             {Examples: \href{https://www.thefashionspot.com/}{theFashionSpot \externalLink}, \href{https://www.momtastic.com/}{Momtastic \externalLink}, \href{https://www.superherohype.com/}{SuperHeroHype \externalLink}}
         \resumeItemListEnd
-        {\small{Tech: HTML, CSS, Sass, JavaScript, jQuery, PHP, WordPress, SVN with git-svn}\vspace{5pt}}
+        {\small{Tech: HTML, CSS, Sass, JavaScript, jQuery, PHP, WordPress, SVN with git-svn}}
 
     \resumeSubheading
       {Application Development Engineer}{\href{https://www.optum.com/}{OptumInsight \externalLink \footnote{via \href{https://nearsoft.com/}{Nearsoft}}}}{Jan 2009 – Jun 2012}
