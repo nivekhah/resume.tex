@@ -12,7 +12,9 @@
 make
 ```
 
-Note: For this you will need [GNU Make](https://www.gnu.org/software/make/) and `xelatex`. The latter comes bundled with any LaTeX distribution (e.g. [MacTeX](https://www.tug.org/mactex/) for macOS, around 4 GB).
+Note: For this you will need [GNU Make](https://www.gnu.org/software/make/) and `latexmk`. The latter comes bundled with any LaTeX distribution (e.g. [MacTeX](https://www.tug.org/mactex/) for macOS, around 4 GB).
+
+[LaTeX Workshop (Visual Studio Code extension)](https://github.com/James-Yu/LaTeX-Workshop/) can also generate PDFs as you make changes.
 
 ### How to build online
 
